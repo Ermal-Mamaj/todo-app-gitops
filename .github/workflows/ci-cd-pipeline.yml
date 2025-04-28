@@ -33,5 +33,5 @@ jobs:
 
       - name: Deploy to ArgoCD
         run: |
-          kubectl apply -f production-application.yaml
-          kubectl apply -f staging-application.yaml
+          kubectl apply -f production-app.yaml
+          kubectl apply -f staging-app.yaml
