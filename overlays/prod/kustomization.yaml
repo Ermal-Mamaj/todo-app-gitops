@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+patches:
+  - path: deployment.yaml
+namePrefix: prod-
+images:
+  - name: ermalmamaj/todo-app
+    newName: ermalmamaj/todo-app:prod
