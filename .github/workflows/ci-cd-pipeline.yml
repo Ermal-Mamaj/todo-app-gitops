@@ -25,11 +25,11 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t your-docker-repo/todo-app:${GITHUB_SHA} .
+          docker build -t ermalmamaj/todo-app:${GITHUB_SHA} .
 
       - name: Push Docker image
         run: |
-          docker push your-docker-repo/todo-app:${GITHUB_SHA}
+          docker push ermalmamaj/todo-app:${GITHUB_SHA}
 
       - name: Deploy to ArgoCD
         run: |
